@@ -12,16 +12,17 @@ PCSCD can be obtained from the package manager with the following command
 
     sudo apt install pcscd
 
-Once PCSCD is installed you will need to enable it to get full functionality. This is done with
+Once PCSCD is installed you will need to start and enable it to get full functionality. This is done with
 
     sudo systemctl enable pcscd.service
 
+    sudo systemctl start pcscd.service
 
 Note that the QR scanning feature requires gnome-screenshot when using Wayland.
 
     sudo apt install gnome-screenshot
 
-### Intstallation on the operating system
+### Installation on the operating system
 Execute following command to istall Yubico Authenticator to your computer:
 
     ./desktop_integration.sh --install
